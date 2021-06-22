@@ -1,6 +1,6 @@
 import {Component, NgModule, VERSION} from '@angular/core'
 import {BrowserModule} from '@angular/platform-browser'
-import { AuthComponent } from 'auth.component/auth.component.ts'
+import { AuthComponent } from './auth.component/auth.component.ts'
 
 @Component({
   selector: 'my-app',
@@ -17,8 +17,8 @@ export class App {
 }
 
 @NgModule({
-  imports: [BrowserModule, AuthComponent ],
-  declarations: [App],
+  imports: [BrowserModule],
+  declarations: [App, AuthComponent],
   bootstrap: [App]
 })
 export class AppModule {
